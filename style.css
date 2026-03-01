@@ -58,7 +58,7 @@ p, li {
 header {
     text-align: center;
     padding: 60px 20px 40px 20px;
-    background: linear-gradient(to right, #000000, #0a0a0a);
+    background: linear-gradient(to right, #000000, #3cdef3);
 }
 
 header h1 {
@@ -160,6 +160,7 @@ hr {
 
     header h1 {
         font-size: 2.2rem;
+        text-align: center;
     }
 
     header .role {
