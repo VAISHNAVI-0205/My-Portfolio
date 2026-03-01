@@ -1,110 +1,104 @@
 /* ===============================
-   RESET
+   NAVIGATION BAR
 ================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===============================
-   PAGE BACKGROUND
-================================ */
-body {
-    background-color: #eef2f7;
-    font-family: "Times New Roman", serif;
-    color: #2c2c2c;
-    line-height: 1.8;
-
-    max-width: 900px;
-    margin: 40px auto;
-    background: #ffffff;
-    padding: 40px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-}
-
-/* ===============================
-   MAIN TITLE
-================================ */
-h1 {
-    font-family: "Bookman Old Style", serif;
+nav {
     text-align: center;
-    font-size: 40px;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    color: #0b3d91;   /* Professional Blue */
-}
-
-/* Role */
-body > p {
-    text-align: justify;
-    font-size: 18px;
-    color: #555;
     margin-bottom: 30px;
 }
 
-/* ===============================
-   SECTION HEADINGS
-================================ */
-h2 {
-    font-size: 22px;
-    margin-top: 35px;
-    margin-bottom: 15px;
-    border-left: 5px solid #0b3d91;
-    padding-left: 12px;
-    color: #0b3d91;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    position: relative;
 }
 
-/* Subheadings */
-h3 {
-    font-size: 17px;
-    margin-top: 18px;
-    margin-bottom: 6px;
-    color: #333;
+nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #0b3d91;
+    transition: 0.3s;
+    margin: auto;
 }
 
-/* ===============================
-   PARAGRAPH
-================================ */
-p {
-    text-align: justify;
-    margin-bottom: 12px;
+nav a:hover::after {
+    width: 100%;
 }
 
 /* ===============================
-   LISTS
+   ROLE TEXT (Frontend Developer)
 ================================ */
-ul {
-    margin-left: 25px;
-    margin-bottom: 15px;
-}
-
-li {
-    margin-bottom: 5px;
+.role {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+    font-style: italic;
 }
 
 /* ===============================
-   LINKS
+   RESUME BUTTON
 ================================ */
-a {
-    color: #0b3d91;
-    text-decoration: none;
-    font-weight: bold;
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #0b3d91;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #062c6b;
+.btn:hover {
+    background: #062c6b;
+}
+
+/* Center Resume Button */
+div {
+    text-align: center;
 }
 
 /* ===============================
-   DIVIDER
+   SMOOTH SCROLL
 ================================ */
-hr {
-    margin: 35px 0;
-    border: none;
-    border-top: 1px solid #ddd;
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===============================
+   CONTACT SECTION STYLE
+================================ */
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#contact li {
+    margin-bottom: 8px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
