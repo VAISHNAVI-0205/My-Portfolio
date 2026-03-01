@@ -6,17 +6,21 @@ body {
     padding: 0;
     font-family: 'Bookman Old Style', 'Times New Roman', serif;
     background-color: #0d0d0d; /* dark black background */
-    color: #e0e0e0; /* light text for contrast */
+    color: #e0e0e0; /* default text color */
     line-height: 1.6;
 }
 
-h1, h2, h3 {
+/* =========================
+   Headings & Paragraphs
+========================= */
+h1, h2 {
     color: #00aaff; /* blue titles */
     margin-bottom: 15px;
 }
 
-p, li {
-    text-align: justify; /* justified text */
+h3, p {
+    color: #0d0d0d; /* black text */
+    text-align: justify; /* justified paragraphs */
     margin-bottom: 10px;
 }
 
@@ -56,9 +60,9 @@ p, li {
    Header Section
 ========================= */
 header {
-    text-align: center;
+    text-align: center; /* center name & role */
     padding: 60px 20px 40px 20px;
-    background: linear-gradient(to right, #000000, #3cdef3);
+    background: linear-gradient(to right, #000000, #0a0a0a);
 }
 
 header h1 {
@@ -69,6 +73,7 @@ header h1 {
 header .role {
     font-size: 1.5rem;
     color: #00aaff;
+    margin-bottom: 20px;
 }
 
 /* =========================
@@ -160,7 +165,6 @@ hr {
 
     header h1 {
         font-size: 2.2rem;
-        text-align: center;
     }
 
     header .role {
