@@ -1,108 +1,168 @@
-/* ===============================
-   NAVIGATION BAR
-================================ */
-/* ===============================
-   FIXED NAVBAR
-================================ */
+/* =========================
+   Global Styles
+========================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bookman Old Style', 'Times New Roman', serif;
+    background-color: #0d0d0d; /* dark black background */
+    color: #e0e0e0; /* light text for contrast */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #00aaff; /* blue titles */
+    margin-bottom: 15px;
+}
+
+p, li {
+    text-align: justify; /* justified text */
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Navbar Styles
+========================= */
 .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #111;
+    padding: 15px;
     position: sticky;
     top: 0;
-    background: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
     z-index: 1000;
+    border-bottom: 2px solid #00aaff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .navbar a {
-    margin: 0 20px;
     text-decoration: none;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
     font-weight: bold;
-    color: #0b3d91;
-    transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: #062c6b;
+    background-color: #00aaff;
+    color: #0d0d0d;
+    transform: scale(1.05);
 }
 
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ===============================
-   ROLE TEXT (Frontend Developer)
-================================ */
-.role {
+/* =========================
+   Header Section
+========================= */
+header {
     text-align: center;
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 25px;
-    font-style: italic;
+    padding: 60px 20px 40px 20px;
+    background: linear-gradient(to right, #000000, #0a0a0a);
 }
 
-/* ===============================
-   RESUME BUTTON
-================================ */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .role {
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+/* =========================
+   Sections
+========================= */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #00aaff;
+    margin: 50px 0;
+}
+
+/* =========================
+   Projects Section
+========================= */
+#projects p, #about p {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Resume Button
+========================= */
 .btn {
     display: inline-block;
-    padding: 10px 22px;
-    background: #0b3d91;
-    color: #fff;
-    border-radius: 5px;
-    margin-top: 15px;
-    transition: 0.3s ease;
+    padding: 12px 25px;
+    background-color: #00aaff;
+    color: #0d0d0d;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #00aaff;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background: #062c6b;
+    background-color: #0d0d0d;
+    color: #00aaff;
+    transform: scale(1.05);
 }
 
-/* Center Resume Button */
-div {
-    text-align: center;
-}
-
-/* ===============================
-   SMOOTH SCROLL
-================================ */
-html {
-    scroll-behavior: smooth;
-}
-
-/* ===============================
-   CONTACT SECTION STYLE
-================================ */
+/* =========================
+   Contact Section
+========================= */
 #contact ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 #contact li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
-/* ===============================
-   MOBILE RESPONSIVE
-================================ */
+#contact a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+/* =========================
+   Responsive Design
+========================= */
 @media (max-width: 768px) {
-
-    body {
-        padding: 20px;
-        margin: 20px;
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    h1 {
-        font-size: 28px;
+    header h1 {
+        font-size: 2.2rem;
     }
 
-    h2 {
-        font-size: 18px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
+    header .role {
+        font-size: 1.2rem;
     }
 }
