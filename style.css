@@ -13,18 +13,13 @@ body {
 /* =========================
    Headings & Paragraphs
 ========================= */
-h1 {
-    color: #ffffff; /* white for your name */
-    margin-bottom: 10px;
-}
-
-h2 {
-    color: #00aaff; /* blue for section titles */
+h1, h2 {
+    color: #00aaff; /* blue titles */
     margin-bottom: 15px;
 }
 
 h3, p {
-    color: #0d0d0d; /* black for subheadings and paragraphs */
+    color: #0d0d0d; /* black text */
     text-align: justify; /* justified paragraphs */
     margin-bottom: 10px;
 }
@@ -70,9 +65,14 @@ header {
     background: linear-gradient(to right, #000000, #0a0a0a);
 }
 
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
 header .role {
     font-size: 1.5rem;
-    color: #00aaff; /* blue for your role */
+    color: #00aaff;
     margin-bottom: 20px;
 }
 
