@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 h3, p {
-    color: #0d0d0d; /* black text */
+    color: hsl(0, 33%, 97%); /* black text */
     text-align: justify; /* justified paragraphs */
     margin-bottom: 10px;
 }
